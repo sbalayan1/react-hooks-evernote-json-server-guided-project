@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState } from "react";
 import NoteEditor from "./NoteEditor";
 import NoteViewer from "./NoteViewer";
 import Instructions from "./Instructions";
@@ -10,16 +10,25 @@ import Instructions from "./Instructions";
           Then complete the rest of your app before attempting to
           refactor to get this Content component to work.
 */
-function Content() {
-  const getContent = () => {
-    if (false) {
-      return <NoteEditor />;
-    } else if (false) {
-      return <NoteViewer />;
+function Content({ editState, setEditState, selectedNote, setSelectedNote, filteredNoteData, setFilteredNoteData }) {
+
+    const getContent = () => {
+    if (editState===true) {
+        return <NoteEditor 
+            selectedNote={selectedNote}
+            setSelectedNote={setSelectedNote}
+            setEditState={setEditState}
+            filteredNoteData={filteredNoteData}
+            setFilteredNoteData={setFilteredNoteData}
+        />;
+    } else if (editState===false) {
+        return <NoteViewer 
+            selectedNote={selectedNote} 
+            setEditState={setEditState}/>;
     } else {
-      return <Instructions />;
+        return <Instructions />;
     }
-  };
+    };
 
   return <div className="master-detail-element detail">{getContent()}</div>;
 }

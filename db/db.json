@@ -1,1 +1,63 @@
-{}
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "sbalayan"
+    }
+  ],
+  "notes": [
+    {
+      "userid": 1,
+      "title": "A journal about my day",
+      "body": "Hi. my name is sean. i had a good day today. I worked out, had a sandwich, and drank some boba",
+      "date_created": "Thurs Jun 17 2021",
+      "id": 1,
+      "date_edited": "Thurs Jun 17 2021"
+    },
+    {
+      "userid": 1,
+      "title": "Why I love coding",
+      "body": "It is challenging. I like to be challenged.",
+      "date_created": "Wed Jun 16 2021",
+      "id": 2,
+      "date_edited": "Wed Jun 16 2021"
+    },
+    {
+      "userid": 1,
+      "title": "Just change the title",
+      "body": "Body",
+      "date_created": "Tues Jun 15, 2021",
+      "id": 3,
+      "date_edited": "Tues Jun 15, 2021"
+    },
+    {
+      "userid": 1,
+      "title": "Title",
+      "body": "Just change the body",
+      "date_created": "Fri Jun 18 2021",
+      "id": 4,
+      "date_edited": "Fri Jun 18 2021"
+    },
+    {
+      "userid": 1,
+      "title": "Title",
+      "body": "Body",
+      "date_created": "Fri Jun 18 2021",
+      "id": 5
+    },
+    {
+      "userid": 1,
+      "title": "Title",
+      "body": "Body",
+      "date_created": "Fri Jun 18 2021",
+      "id": 6
+    },
+    {
+      "userid": 1,
+      "title": "Title",
+      "body": "Body",
+      "date_created": "Fri Jun 18 2021",
+      "id": 7
+    }
+  ]
+}

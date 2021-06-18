@@ -1,11 +1,18 @@
 import React from "react";
 import NoteItem from "./NoteItem";
 
-function NoteList() {
+function NoteList({ filteredNoteData, clickSideNote, setEditState }) {
+    
   return (
     <ul>
       {/* Render list of notes here... */}
-      <NoteItem />
+      {filteredNoteData.map(note => {
+          return <NoteItem 
+            note={note} 
+            clickSideNote={clickSideNote} 
+            setEditState={setEditState}
+            />
+      })}
     </ul>
   );
 }
